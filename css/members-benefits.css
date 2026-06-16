@@ -1,0 +1,124 @@
+/* ============================================================
+   MEMBER BENEFITS — page-specific styles
+   Built on top of styles.css (shared variables, header, footer,
+   buttons, .container, .label, dot-grid-bg, .cta)
+   ============================================================ */
+
+/* Active nav state */
+nav.main-nav a.nav-link.active{color:var(--teal);}
+
+/* ---------- Hero (Member Benefits variant) ---------- */
+.hero-benefits{
+  min-height:420px;
+  background:linear-gradient(120deg, rgb(15 30 45 / 100%), rgba(15, 30, 45, .65)), url(../img/members-benefits-slider.png) 50% 50% / cover no-repeat;
+}
+.hero-benefits .hero-content{padding:110px 0 170px;max-width:700px;}
+
+/* Small curve along the bottom edge of the hero */
+.hero-benefits::before{
+  content:'';
+  position:absolute;
+  left:-2%;right:-2%;bottom:-1px;
+  height:48px;
+  background:#fff;
+  border-radius:50% 50% 0 0 / 100% 100% 0 0;
+  z-index:3;
+  pointer-events:none;
+}
+
+/* ---------- 1. Benefits by strategic need ---------- */
+.benefits{padding:100px 0 90px;text-align:center;}
+.benefits h2{font-size:34px;font-weight:800;margin:10px 0 50px;}
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left;}
+.benefit-card{
+  position:relative;background:#fff;border:1px solid var(--border-color);border-radius:14px;
+  padding:32px 28px;transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .45s ease,box-shadow .35s ease,border-color .35s ease;
+}
+.benefit-card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(13,127,128,.12);border-color:var(--teal);}
+.benefit-card .icon-circle{
+     width: 75px;
+    height: 56px;
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.benefit-card h3{font-size:18px;font-weight:800;margin-bottom:10px;color:var(--navy);}
+.benefit-card p{font-size:14px;color:var(--text-muted);margin-bottom:18px;line-height:1.65;}
+.benefit-card .learn-more{font-weight:800;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);display:inline-flex;align-items:center;gap:8px;text-decoration:none;}
+.benefit-card .learn-more i{transition:transform .25s ease;font-size:11px;}
+.benefit-card .learn-more:hover i{transform:translateX(5px);}
+
+/* ---------- 2. What members access ---------- */
+.access{padding:100px 0;background:var(--bg-blue);position:relative;overflow:hidden;}
+.access::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 10% 15%, rgba(0, 137, 166, .10), transparent 40%), radial-gradient(circle at 90% 10%, rgba(124, 179, 66, .10), transparent 45%), radial-gradient(circle at 50% 100%, rgba(244, 148, 30, .08), transparent 40%);
+}
+.access .container{position:relative;display:grid;grid-template-columns:2fr 1fr;gap:60px;align-items:center;}
+.access-left{position:relative;z-index:2;}
+.access h2{font-size:32px;font-weight:800;margin:10px 0 30px;max-width:480px;}
+.access-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 30px;list-style:none;}
+.access-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-dark);font-weight:600;line-height:1.45;}
+.access-list i{color:var(--teal);font-size:16px;margin-top:2px;flex-shrink:0;}
+.access-image{position:absolute;top:0;right:0;height:100%;width:48%;display:flex;align-items:center;justify-content:flex-end;z-index:1;}
+.access-image img{width:100%;height:100%;object-fit:contain;object-position:right center;}
+
+/* ---------- 3. Who it is for ---------- */
+.who{padding:100px 0;text-align:center;}
+.who h2{font-size:34px;font-weight:800;margin:10px 0 50px;}
+.who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.who-card{
+  background:#fff;border:1px solid var(--border-color);border-radius:14px;padding:32px 28px;text-align:left;
+  display:flex;align-items:flex-start;gap:18px;
+  transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .45s ease,box-shadow .35s ease,border-color .35s ease;
+}
+.who-card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(20,40,60,.10);}
+.who-card .icon-circle{width:auto;height:auto;border-radius:0;background:none;display:flex;align-items:center;justify-content:center;margin:2px 0 0;font-size:28px;flex-shrink:0;}
+.who-card:nth-child(1) .icon-circle{color:var(--teal);}
+.who-card:nth-child(2) .icon-circle{color:var(--green);}
+.who-card:nth-child(3) .icon-circle{color:var(--orange);}
+.who-card h3{font-size:18px;font-weight:800;margin-bottom:8px;color:var(--navy);}
+.who-card p{font-size:14px;color:var(--text-muted);}
+.who-note{text-align:center;color:var(--text-muted);font-size:14px;max-width:680px;margin:44px auto 0;line-height:1.7;}
+.who-card img{width: 100px;}
+
+/* ---------- 4. How membership creates value ---------- */
+.value{padding:100px 0;text-align:center;}
+.value h2{font-size:34px;font-weight:800;margin:10px 0 70px;}
+.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;}
+.value-card{
+  background:#fff;border:1px solid var(--border-color);border-radius:14px;padding:36px 24px 25px;position:relative;
+  display:flex;flex-direction:column;align-items:center;
+  transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .45s ease,box-shadow .35s ease,border-color .35s ease;
+}
+.value-card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(20,40,60,.10);}
+.step-num{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:18px;margin:0 auto -25px;position: relative;
+    top: -60px;}
+.value-card:nth-child(1) .step-num{background:var(--green);box-shadow:0 0 0 8px var(--glow-green);}
+.value-card:nth-child(2) .step-num{background:#3a7bd5;box-shadow:0 0 0 8px rgba(58,123,213,.32);}
+.value-card:nth-child(3) .step-num{background:var(--teal);box-shadow:0 0 0 8px var(--glow-teal);}
+.value-card:nth-child(4) .step-num{background:var(--orange);box-shadow:0 0 0 8px var(--glow-orange);}
+.value-card h3{font-size:16px;font-weight:800;margin-bottom:8px;color:var(--navy);}
+.value-card p{font-size:13px;color:var(--text-muted);line-height:1.6;}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px){
+  .benefits-grid{grid-template-columns:repeat(2,1fr);}
+  .access .container{grid-template-columns:1fr;}
+  .access-image{position:static;width:100%;height:240px;margin-top:40px;}
+  .access-right{order:2;}
+  .access-list{grid-template-columns:1fr;}
+  .who-grid{grid-template-columns:1fr;}
+  .value-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width: 600px){
+  .benefits-grid{grid-template-columns:1fr;}
+  .value-grid{grid-template-columns:1fr;}
+  .access-image{display:none;}
+}
