@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IASP — Knowledge Room</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/knowledge-room.css">
+
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img class="logo-on-dark" src="img/iasp-logo-white.png" alt="IASP">
+      <img class="logo-on-light" src="img/IASP-logo.png" alt="IASP">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li class="has-submenu">
+          <a class="nav-link" href="/our-members">Our Members <i class="fa-solid fa-chevron-down" style="font-size:10px"></i></a>
+          <ul class="submenu">
+            <li><a href="/our-members/directory">Directory</a></li>
+            <li><a href="/our-members/communities">Communities</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a class="nav-link active" href="/our-industry">Our Industry <i class="fa-solid fa-chevron-down" style="font-size:10px"></i></a>
+          <ul class="submenu">
+            <li><a href="/our-industry/the-role-of-stps-and-areas-of-innovation">The Role of STPs and Areas of Innovation</a></li>
+            <li><a href="/our-industry/definitions">Definitions</a></li>
+            <li><a href="knowledge-room.html">Knowledge Room</a></li>
+            <li><a href="/our-industry/inspiring-solutions">Inspiring Solutions</a></li>
+            <li><a href="/our-industry/question-of-the-month">Question of the Month</a></li>
+            <li><a href="/our-industry/statistics">Statistics</a></li>
+            <li><a href="/our-industry/covid-19-solutions">COVID-19 Solutions</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a class="nav-link" href="/activities">Activities <i class="fa-solid fa-chevron-down" style="font-size:10px"></i></a>
+          <ul class="submenu">
+            <li><a href="/activities/news">News</a></li>
+            <li><a href="/activities/blog">Blog</a></li>
+            <li><a href="/activities/events">Events</a></li>
+            <li><a href="/activities/iasp-world-conference">IASP World Conference</a></li>
+            <li><a href="/activities/services">Services</a></li>
+            <li><a href="/activities/projects">Projects</a></li>
+            <li><a href="/activities/open-opportunities">Open Opportunities</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a class="nav-link" href="/about-us">About Us <i class="fa-solid fa-chevron-down" style="font-size:10px"></i></a>
+          <ul class="submenu">
+            <li><a href="about.html">About IASP</a></li>
+            <li><a href="/about-us/board-of-directors">Board of Directors</a></li>
+            <li><a href="/about-us/iasp-think-tank">IASP Think Tank</a></li>
+            <li><a href="/about-us/partners">Partners</a></li>
+            <li><a href="/about-us/our-team">Our Team</a></li>
+            <li><a href="/about-us/contact-us">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a class="nav-link" href="/join">Join <i class="fa-solid fa-chevron-down" style="font-size:10px"></i></a>
+          <ul class="submenu">
+            <li><a href="/join/join-iasp">Join IASP</a></li>
+            <li><a href="/join/membership-fees">Membership Fees</a></li>
+            <li><a href="/join/faq">FAQ</a></li>
+            <li><a href="/join/newsletter-signup">Newsletter Signup</a></li>
+            <li><a href="/join/app-download">App Download</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-mobile-extra">
+        <a href="#" class="btn btn-teal"><i class="fa-solid fa-lock"></i> Members Area</a>
+        <div class="nav-social">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="btn btn-teal" style="padding:10px 22px;"><i class="fa-solid fa-lock"></i> Members Area</a>
+      <button class="menu-toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero hero-knowledge">
+  <div class="container">
+    <div class="hero-content">
+      <span class="label">Our Industry</span>
+      <h1>Welcome to the <span class="text-gradient">Knowledge Room</span></h1>
+      <p>Explore IASP publications, global surveys, webinars, conference papers and practical resources designed to help science parks, innovation districts and areas of innovation benchmark, learn and grow.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEARCH MODULE ============ -->
+<section class="search-module">
+  <div class="container">
+    <div class="search-card">
+      <form class="search-bar" onsubmit="return false;">
+        <input type="text" placeholder="Search by title, author, topic or keyword...">
+        <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <div class="topics-row">
+        <span class="topics-label">Popular topics:</span>
+        <a href="#" class="topic-chip">Benchmarking</a>
+        <a href="#" class="topic-chip">Governance</a>
+        <a href="#" class="topic-chip">Sustainability</a>
+        <a href="#" class="topic-chip">Innovation</a>
+        <a href="#" class="topic-chip">Science Parks</a>
+        <a href="#" class="topic-chip">AI</a>
+        <a href="#" class="topic-chip">Startups</a>
+        <a href="#" class="topic-chip">Global Survey</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIND KNOWLEDGE BY NEED ============ -->
+<section class="find-need">
+  <div class="container">
+    <span class="label center">Find Knowledge by Need</span>
+    <h2>Resources to help you make better strategic decisions</h2>
+    <!--<div class="need-grid">
+      <div class="need-card need-green">
+        <div class="icon-circle"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Benchmark your performance</h3>
+        <p>Reports, surveys and data to compare your organisation with global peers.</p>
+        <a href="#" class="explore-link">Explore resources <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="need-card need-blue">
+        <div class="icon-circle"><i class="fa-solid fa-landmark"></i></div>
+        <h3>Improve governance and management</h3>
+        <p>Guides and publications on ownership, operations, services and evaluation.</p>
+        <a href="#" class="explore-link">Explore resources <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="need-card need-teal">
+        <div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
+        <h3>Understand global trends</h3>
+        <p>Insights on innovation, sustainability, digital transformation and emerging sectors.</p>
+        <a href="#" class="explore-link">Explore resources <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="need-card need-orange">
+        <div class="icon-circle"><i class="fa-solid fa-people-group"></i></div>
+        <h3>Learn from peers</h3>
+        <p>Webinars, conference papers and case studies from IASP members worldwide.</p>
+        <a href="#" class="explore-link">Explore resources <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>-->
+  </div>
+</section>
+
+<!-- ============ FEATURED REPORT ============ -->
+<section class="featured-report">
+  <div class="container">
+    <div class="featured-card">
+      <div class="featured-cover">
+        <div class="cover-mock cover-mock-lg">
+          <img src="img/iasp_global_survey.png">
+        </div>
+      </div>
+      <div class="featured-info">
+        <span class="label">Featured Report</span>
+        <h3>IASP Global Survey 2024</h3>
+        <p>Science and technology parks, innovation districts, areas of innovation and other organised innovation spaces throughout the world.</p>
+        <div class="tag-row">
+          <span class="res-tag">Report</span>
+          <span class="res-tag">Benchmarking</span>
+          <span class="res-tag">Paid Resource</span>
+        </div>
+        <div class="featured-actions">
+          <a href="#" class="btn btn-teal">View Report <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="member-discount-pill"><i class="fa-regular fa-circle-question"></i> Member discount available</a>
+        </div>
+      </div>
+      <div class="featured-related">
+        <a href="#" class="related-item">
+          <div class="related-thumb thumb-navy"><img src="img/2017_01_05_AOI_cover.jpg"></div>
+          <div class="related-text">
+            <h5>Areas of Innovation in a Global World</h5>
+            <span>Report &middot; Paid Resource</span>
+          </div>
+        </a>
+        <a href="#" class="related-item">
+          <div class="related-thumb thumb-dark"><img src="img/TaxonomyReport_cover.jpg"></div>
+          <div class="related-text">
+            <h5>A Taxonomy of Organised Innovation Spaces</h5>
+            <span>Report &middot; Paid Resource</span>
+          </div>
+        </a>
+        <a href="#" class="related-item">
+          <div class="related-thumb thumb-teal"><img src="img/0_1.jpg"></div>
+          <div class="related-text">
+            <h5>IASP Global Survey 2022</h5>
+            <span>Report &middot; Paid Resource</span>
+          </div>
+        </a>
+        <a href="#" class="view-all-link">View all featured resources <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POPULAR RESOURCES ============ -->
+<section class="popular-resources">
+  <div class="container">
+    <span class="label center">Popular Resources</span>
+    <div class="section-head-row">
+      <h2>Most accessed by the IASP community</h2>
+      <a href="#" class="view-all-link">View All Popular <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="resource-row">
+      <button class="carousel-nav carousel-prev" aria-label="Previous resources"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <div class="resource-cover cover-survey24"><span class="res-badge">Report</span></div>
+          <div class="resource-body">
+            <h4>IASP Global Survey 2024</h4>
+            <div class="resource-price">€250</div>
+            <span class="discount-note">Member discount available</span>
+            <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="resource-card">
+          <div class="resource-cover cover-webinar"><span class="res-badge">Webinar</span><div class="play-btn"><i class="fa-solid fa-play"></i></div></div>
+          <div class="resource-body">
+            <h4>From Data to Decisions: Benchmarking Your Innovation Ecosystem</h4>
+            <div class="resource-price">Free</div>
+            <span class="discount-note">Member discount available</span>
+            <a href="#" class="btn-resource">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="resource-card">
+          <div class="resource-cover cover-ebook"><span class="res-badge">E-book</span></div>
+          <div class="resource-body">
+            <h4>Science Parks &amp; Sustainability</h4>
+            <div class="resource-price">€40</div>
+            <span class="discount-note">Member discount available</span>
+            <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="resource-card">
+          <div class="resource-cover cover-conference"><span class="res-badge">Conference Paper</span></div>
+          <div class="resource-body">
+            <h4>The Role of Innovation Districts in Regional Development</h4>
+            <div class="resource-price">€30</div>
+            <span class="discount-note">Member discount available</span>
+            <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="resource-card">
+          <div class="resource-cover cover-survey22"><span class="res-badge">Report</span></div>
+          <div class="resource-body">
+            <h4>IASP Global Survey 2022</h4>
+            <div class="resource-price">€200</div>
+            <span class="discount-note">Member discount available</span>
+            <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="resource-card">
+          <div class="resource-cover cover-ai"><span class="res-badge">Article</span></div>
+          <div class="resource-body">
+            <h4>AI in Science Parks: Emerging Trends</h4>
+            <div class="resource-price">Free</div>
+            <span class="discount-note">Member discount available</span>
+            <a href="#" class="btn-resource">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="resource-card">
+          <div class="resource-cover cover-toolkit"><span class="res-badge">Free Download</span></div>
+          <div class="resource-body">
+            <h4>Startups &amp; Open Innovation: A Practical Toolkit</h4>
+            <div class="resource-price">Free</div>
+            <span class="discount-note">Member discount available</span>
+            <a href="#" class="btn-resource">Download <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-nav carousel-next" aria-label="Next resources"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ALL RESOURCES ============ -->
+<section class="all-resources">
+  <div class="container">
+    <div class="resources-layout">
+      <aside class="filters-sidebar">
+        <div class="filters-head">
+          <h3>Refine your results</h3>
+          <a href="#" class="clear-all">Clear all</a>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle" type="button">Resource type <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="filter-options">
+            <label class="filter-check"><input type="checkbox" data-filter="type" value="report"> Reports &amp; surveys</label>
+            <label class="filter-check"><input type="checkbox" data-filter="type" value="ebook"> E-books &amp; publications</label>
+            <label class="filter-check"><input type="checkbox" data-filter="type" value="webinar"> Webinars</label>
+            <label class="filter-check"><input type="checkbox" data-filter="type" value="conference"> Conference papers</label>
+            <label class="filter-check"><input type="checkbox" data-filter="type" value="article"> Articles &amp; knowledge pieces</label>
+            <label class="filter-check"><input type="checkbox" data-filter="type" value="free-download"> Free downloads</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle" type="button">Topic <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="filter-options">
+            <label class="filter-check"><input type="checkbox" data-filter="topic" value="benchmarking"> Benchmarking</label>
+            <label class="filter-check"><input type="checkbox" data-filter="topic" value="governance"> Governance</label>
+            <label class="filter-check"><input type="checkbox" data-filter="topic" value="sustainability"> Sustainability</label>
+            <label class="filter-check"><input type="checkbox" data-filter="topic" value="open-innovation"> Open Innovation</label>
+            <label class="filter-check"><input type="checkbox" data-filter="topic" value="science-parks"> Science Parks</label>
+            <label class="filter-check"><input type="checkbox" data-filter="topic" value="ai"> AI</label>
+            <label class="filter-check"><input type="checkbox" data-filter="topic" value="startups"> Startups</label>
+            <label class="filter-check"><input type="checkbox" data-filter="topic" value="global-survey"> Global Survey</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle" type="button">Year <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="filter-options">
+            <label class="filter-check"><input type="checkbox" data-filter="year" value="2024"> 2024</label>
+            <label class="filter-check"><input type="checkbox" data-filter="year" value="2023"> 2023</label>
+            <label class="filter-check"><input type="checkbox" data-filter="year" value="2022"> 2022</label>
+            <label class="filter-check"><input type="checkbox" data-filter="year" value="2021"> 2021</label>
+            <label class="filter-check"><input type="checkbox" data-filter="year" value="2020"> 2020</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle" type="button">Free / Paid <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="filter-options">
+            <label class="filter-check"><input type="checkbox" data-filter="price" value="free"> Free</label>
+            <label class="filter-check"><input type="checkbox" data-filter="price" value="paid"> Paid</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <button class="filter-toggle" type="button">Member discount available <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="filter-options">
+            <label class="filter-check"><input type="checkbox" data-filter="discount" value="yes"> Only show resources with member discount</label>
+          </div>
+        </div>
+        <button class="btn btn-outline-dark more-filters" type="button"><i class="fa-solid fa-sliders"></i> <span class="more-filters-label">Show all</span></button>
+      </aside>
+
+      <div class="resources-main">
+        <div class="resources-head">
+          <h2>All resources <span class="results-count" id="resultsCount">(12)</span></h2>
+          <div class="resources-controls">
+            <label class="sort-by">Sort by
+              <select id="sortSelect">
+                <option value="popular">Most popular</option>
+                <option value="newest">Newest</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+              </select>
+            </label>
+            <div class="view-toggle">
+              <button class="active" data-view="grid" type="button" aria-label="Grid view"><i class="fa-solid fa-table-cells-large"></i></button>
+              <button data-view="list" type="button" aria-label="List view"><i class="fa-solid fa-list"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="resources-grid" id="resourcesGrid">
+          <div class="resource-card" data-type="report" data-topic="benchmarking global-survey" data-year="2024" data-price="250" data-discount="yes">
+            <div class="resource-cover cover-survey24"><span class="res-badge">Report</span></div>
+            <div class="resource-body">
+              <h4>IASP Global Survey 2024</h4>
+              <p>Benchmark science parks, innovation districts and areas of innovation worldwide.</p>
+              <div class="resource-price">€250</div>
+              <span class="discount-note">Member discount available</span>
+              <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="ebook" data-topic="science-parks governance" data-year="2023" data-price="50" data-discount="yes">
+            <div class="resource-cover cover-districts"><span class="res-badge">E-book</span></div>
+            <div class="resource-body">
+              <h4>Innovation Districts Guide</h4>
+              <p>Practical guide for planning, developing and managing innovation districts.</p>
+              <div class="resource-price">€50</div>
+              <span class="discount-note">Member discount available</span>
+              <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="webinar" data-topic="sustainability science-parks" data-year="2024" data-price="0" data-discount="yes">
+            <div class="resource-cover cover-wind"><span class="res-badge">Webinar</span><div class="play-btn"><i class="fa-solid fa-play"></i></div></div>
+            <div class="resource-body">
+              <h4>Sustainability Strategies for Science Parks</h4>
+              <p>Recorded webinar with experts and case studies from members.</p>
+              <div class="resource-price">Free</div>
+              <span class="discount-note">Member discount available</span>
+              <a href="#" class="btn-resource">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="conference" data-topic="open-innovation startups" data-year="2022" data-price="30" data-discount="yes">
+            <div class="resource-cover cover-resilient"><span class="res-badge">Conference Paper</span></div>
+            <div class="resource-body">
+              <h4>Building Resilient Innovation Ecosystems</h4>
+              <p>Conference paper presented at IASP World Conference 2022.</p>
+              <div class="resource-price">€30</div>
+              <span class="discount-note">Member discount available</span>
+              <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="article" data-topic="ai science-parks" data-year="2024" data-price="0" data-discount="no">
+            <div class="resource-cover cover-ai"><span class="res-badge">Article</span></div>
+            <div class="resource-body">
+              <h4>AI in Science Parks: Emerging Trends</h4>
+              <p>An overview of how AI is reshaping services, operations and tenant support.</p>
+              <div class="resource-price">Free</div>
+              <a href="#" class="btn-resource">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="ebook" data-topic="governance science-parks" data-year="2021" data-price="45" data-discount="yes">
+            <div class="resource-cover cover-governance"><span class="res-badge">E-book</span></div>
+            <div class="resource-body">
+              <h4>Governance Models for Areas of Innovation</h4>
+              <p>Comparative analysis of ownership, management and operating models.</p>
+              <div class="resource-price">€45</div>
+              <span class="discount-note">Member discount available</span>
+              <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="report" data-topic="benchmarking global-survey" data-year="2022" data-price="200" data-discount="yes">
+            <div class="resource-cover cover-survey22"><span class="res-badge">Report</span></div>
+            <div class="resource-body">
+              <h4>IASP Global Survey 2022</h4>
+              <p>Worldwide benchmarking report on science and technology parks.</p>
+              <div class="resource-price">€200</div>
+              <span class="discount-note">Member discount available</span>
+              <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="free-download" data-topic="startups open-innovation" data-year="2023" data-price="0" data-discount="no">
+            <div class="resource-cover cover-toolkit"><span class="res-badge">Free Download</span></div>
+            <div class="resource-body">
+              <h4>Startups &amp; Open Innovation: A Practical Toolkit</h4>
+              <p>Templates and checklists to connect resident startups with corporate partners.</p>
+              <div class="resource-price">Free</div>
+              <a href="#" class="btn-resource">Download <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="webinar" data-topic="benchmarking ai" data-year="2024" data-price="0" data-discount="yes">
+            <div class="resource-cover cover-webinar"><span class="res-badge">Webinar</span><div class="play-btn"><i class="fa-solid fa-play"></i></div></div>
+            <div class="resource-body">
+              <h4>From Data to Decisions: Benchmarking Your Innovation Ecosystem</h4>
+              <p>Live session recording on using data and AI for benchmarking.</p>
+              <div class="resource-price">Free</div>
+              <span class="discount-note">Member discount available</span>
+              <a href="#" class="btn-resource">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="report" data-topic="science-parks benchmarking" data-year="2020" data-price="60" data-discount="yes">
+            <div class="resource-cover cover-taxonomy"><span class="res-badge">Report</span></div>
+            <div class="resource-body">
+              <h4>A Taxonomy of Organised Innovation Spaces</h4>
+              <p>A shared framework and terminology for areas of innovation worldwide.</p>
+              <div class="resource-price">€60</div>
+              <span class="discount-note">Member discount available</span>
+              <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="conference" data-topic="governance science-parks" data-year="2022" data-price="30" data-discount="yes">
+            <div class="resource-cover cover-conference"><span class="res-badge">Conference Paper</span></div>
+            <div class="resource-body">
+              <h4>The Role of Innovation Districts in Regional Development</h4>
+              <p>Conference paper presented at IASP World Conference 2022.</p>
+              <div class="resource-price">€30</div>
+              <span class="discount-note">Member discount available</span>
+              <a href="#" class="btn-resource">View Resource <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="resource-card" data-type="free-download" data-topic="sustainability science-parks" data-year="2024" data-price="0" data-discount="no">
+            <div class="resource-cover cover-checklist"><span class="res-badge">Free Download</span></div>
+            <div class="resource-body">
+              <h4>Sustainability Checklist for Science Parks</h4>
+              <p>A quick self-assessment checklist to start your sustainability journey.</p>
+              <div class="resource-price">Free</div>
+              <a href="#" class="btn-resource">Download <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="no-results" id="noResults">No resources match the selected filters. Try adjusting or clearing them.</p>
+
+        <div class="pagination" id="pagination">
+          <button class="page-nav" id="prevPage" type="button" aria-label="Previous page"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="page-numbers" id="pageNumbers"></div>
+          <button class="page-nav" id="nextPage" type="button" aria-label="Next page"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="cta">
+  <div class="container">
+    <div>
+      <h2>Looking for more knowledge and resources?</h2>
+      <p>Members get free or discounted access to the full Knowledge Room. Join IASP to unlock everything.</p>
+    </div>
+    <div class="cta-buttons">
+      <a href="members-benefits.html" class="btn btn-outline-white">Member Benefits <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#" class="btn btn-outline-white">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <img src="img/iasp-logo-white.png">
+        </a>
+        <p class="footer-desc">The International Association of Science Parks and Areas of Innovation — linking the best since 1984.</p>
+      </div>
+      <div>
+        <h4>Headquarters</h4>
+        <ul>
+          <li>Tel: +34 93 208 68 03</li>
+          <li>iasp@iasp.ws</li>
+          <li><a href="#">See our offices →</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Meet our team</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Subscribe to our Newsletter</h4>
+        <p style="font-size:13px;color:#9fb0bb;">Stay up to date with the latest news, events and insights.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 IASP. All rights reserved.</span>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/knowledge-room.js"></script>
+</body>
+</html>
