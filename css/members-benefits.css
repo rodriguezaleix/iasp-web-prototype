@@ -13,6 +13,22 @@ nav.main-nav a.nav-link.active{color:var(--teal);}
   background:linear-gradient(120deg, rgb(15 30 45 / 100%), rgba(15, 30, 45, .65)), url(../img/members-benefits-slider.png) 50% 50% / cover no-repeat;
 }
 .hero-benefits .hero-content{padding:110px 0 170px;max-width:700px;}
+.blob-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.blob-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+    /* ¡LA MAGIA! Esto recorta la imagen con una curva perfecta a la izquierda */
+    clip-path: ellipse(120% 120% at 130% 50%);
+    display: block;
+}
 
 /* Small curve along the bottom edge of the hero */
 .hero-benefits::before{
@@ -67,7 +83,7 @@ nav.main-nav a.nav-link.active{color:var(--teal);}
 .access-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-dark);font-weight:600;line-height:1.45;}
 .access-list i{color:var(--teal);font-size:16px;margin-top:2px;flex-shrink:0;}
 .access-image{position:absolute;top:0;right:0;height:100%;width:48%;display:flex;align-items:center;justify-content:flex-end;z-index:1;}
-.access-image img{width:100%;height:100%;object-fit:contain;object-position:right center;}
+
 
 /* ---------- 3. Who it is for ---------- */
 .who{padding:100px 0;text-align:center;}
@@ -121,4 +137,6 @@ nav.main-nav a.nav-link.active{color:var(--teal);}
   .benefits-grid{grid-template-columns:1fr;}
   .value-grid{grid-template-columns:1fr;}
   .access-image{display:none;}
+  .hero-benefits .hero-content {
+    padding: 40px 0 90px;}
 }

@@ -18,6 +18,20 @@
   --header-h:82px;
 }
 
+/* ---- 1080p (≤1920×1080) ---- */
+@media (max-height:1080px) and (min-width:1280px){
+  :root{
+    --header-h:82px;
+  }
+}
+
+/* ---- 1440p (≥2560px width o ≥1440px height) ---- */
+@media (min-height:1081px),(min-width:2560px){
+  :root{
+    --header-h:92px;
+  }
+}
+
 /* ---------- Decorative background utilities (tech / network look) ---------- */
 .dot-grid-bg{position:relative;isolation:isolate;}
 .dot-grid-bg::before{
@@ -60,11 +74,11 @@ body{font-family:'Poppins','Helvetica Neue',Arial,sans-serif;color:var(--text-da
 img{max-width:100%;display:block;}
 a{text-decoration:none;color:inherit;}
 ul{list-style:none;}
-.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+.container{max-width:1240px;margin:0 auto;padding:0 24px;}
 .label{font-size:13px;font-weight:700;letter-spacing:2px;color:var(--teal);text-transform:uppercase;}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:30px;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:2px solid transparent;cursor:pointer;transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease,box-shadow .25s ease;}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:10px 22px;border-radius:30px;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:2px solid transparent;cursor:pointer;transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease,box-shadow .25s ease;}
 .btn:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(20,40,60,.16);}
 .btn:active{transform:translateY(-1px);box-shadow:0 4px 10px rgba(20,40,60,.14);}
 .btn i{transition:transform .25s ease;}
@@ -92,7 +106,7 @@ header.menu-open{
 header.menu-open{transition:none;}
 body{padding-top:var(--header-h);}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1200px;margin:0 auto;}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--navy);max-width: 180px;}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--navy);max-width: 270px;}
 .logo .logo-icon{width:34px;height:34px;border-radius:50%;background:conic-gradient(var(--teal),var(--green),var(--orange),var(--teal));display:flex;align-items:center;justify-content:center;}
 .logo .logo-icon i{color:#fff;font-size:14px;}
 .logo small{display:block;font-size:9px;font-weight:500;letter-spacing:1px;color:var(--text-muted);text-transform:uppercase;}
@@ -271,7 +285,7 @@ header.menu-open .menu-toggle{color:var(--navy);}
 
 /* Ecosystem leaders */
 .ecosystem{background:var(--bg-light);padding:100px 0;position:relative;overflow:hidden;}
-.ecosystem .container{position:relative;display:grid;grid-template-columns:2fr 1fr;gap:60px;align-items:center;}
+.ecosystem .container{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
 .ecosystem h2{font-size:36px;font-weight:800;margin:10px 0 16px;}
 .ecosystem p{color:var(--text-muted);margin-bottom:22px;}
 .ecosystem .learn-more{font-weight:800;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);display:inline-flex;align-items:center;gap:8px;}
@@ -367,12 +381,25 @@ header.menu-open .menu-toggle{color:var(--navy);}
 .members{padding:60px 0;text-align:center; background:#F9F8F6;}
 .members .label{margin-bottom:30px;display:block;}
 .members-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
-.member-logo{padding: 15px 5px; background: white; border-radius: 10px; border: 1px solid var(--border-color); opacity:0.75; transition:opacity .3s ease,transform .3s ease,box-shadow .3s ease,border-color .3s ease;}
+.member-logo{padding: 2px 2px; background: white; border-radius: 10px; opacity:0.75; transition:opacity .3s ease,transform .3s ease,box-shadow .3s ease,border-color .3s ease;}
 .member-logo:hover{opacity: 1; transform:translateY(-4px); box-shadow:0 10px 22px var(--glow-teal); border-color:var(--teal);}
 .member-logo span{display:block;font-size:10px;font-weight:600;color:#9aa7b0;}
 .members .view-all{font-weight:800;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:6px;justify-content:center;}
 .members .view-all i{transition:transform .25s ease;}
 .members .view-all:hover i{transform:translateX(5px);}
+
+/* ── SVG icon utility ──────────────────────────────────────────
+   Uso: <span class="svgi" style="--i:url('img/foo.svg'); width:32px; height:32px; color:var(--teal)"></span>
+   El SVG actúa como máscara; background-color (= currentColor) define el color.
+   Funciona con cualquier SVG de trazo/relleno sobre fondo transparente.
+─────────────────────────────────────────────────────────────── */
+.svgi {
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask: var(--i) center / contain no-repeat;
+  mask: var(--i) center / contain no-repeat;
+  flex-shrink: 0;
+}
 
 /* Footer */
 footer{background:#0f2230;color:#cdd9e0;padding:60px 0 24px;}
